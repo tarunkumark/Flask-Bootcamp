@@ -31,4 +31,27 @@ psql -u postgres -w
 sudo -u postgres psql
 ```
 
+# To run the server
 
+## Create all tables in DB(linux/macOS)
+```
+export FLASK_APP=app
+export FLASK_en=development
+flask shell
+```
+
+## Create all tables in DB(linux/macOS)
+```
+SET FLASK_APP=app
+SET FLASK_en=development
+flask run
+```
+## Inside the shell
+```
+from app import db
+db.create_all()
+```
+## Run the server
+```
+flask run
+```
