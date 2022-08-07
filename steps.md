@@ -19,6 +19,16 @@
 ```
 
 # Creating a database with psql
-## For windows
+
+## Opening the psql CLI
+### For windows
 ```
+psql -u postgres -w
+```
+
+### For Linux/macOS
+```
+sudo -u postgres psql
+```
+
 
