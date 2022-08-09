@@ -59,7 +59,20 @@ def index():
         logo_url=data["logo_url"])
         db.session.add(db_form)
         db.session.commit()
-    return jsonify(db_form.as_dict())
+        return jsonify(db_form.as_dict())
+
+    if request.method == "PATCH":
+        '''
+        UPDATE LOGIC GOES HERE
+        '''
+        pass
+
+    if request.method == "DELETE":
+        '''
+        DELETE LOGIC GOES HERE
+        '''
+        pass
+    return jsonify({"message": "METHOD NOT ALLOWED"})
 if __name__ == '__main__':
     app.run(debug=True) 
 
