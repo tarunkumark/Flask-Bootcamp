@@ -55,3 +55,12 @@ db.create_all()
 ```
 flask run
 ```
+# Fetch updated code
+```
+git pull
+```
+# Push updated code
+```
+git commit -am "message"
+git push origin main
+```
